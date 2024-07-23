@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  background-color: aquamarine;
+  border: 1px solid;
+  display: grid;
+}
+
+.nav {
+  background-color: bisque;
+}
+
+.navl {
+  border: 1px solid;
+  background-color: chocolate;
+}
+
+.navcenter {
+  border: 1px solid;
+  background-color: chocolate;
+}
+
+.navright {
+  border: 1px solid;
+  background-color: chocolate;
+}
+
+.slider {
+  background-color: rgb(207, 138, 138);
+}
+
+.main {
+  background-color: chartreuse;
+}

@@ -6,4 +6,4 @@
 <li>weitere Doku in README</li>
 <li>Author André Semm</li>
 
-<b>Bildrechte liegen bei www.zierfische.de. der Einfachheit halber und mangels geeigneter Software wurden diese wieder genutzt.</b>
+<b>Bildrechte liegen bei www.zierfische.de. Der Einfachheit halber und mangels Zeit sowie geeigneter Software wurden diese wieder genutzt und müssen noch ausgetauscht werden.</b>
