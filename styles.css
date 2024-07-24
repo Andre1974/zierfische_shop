@@ -7,38 +7,152 @@
 html {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px;
+
 }
 
 .container {
-  width: 100vw;
+  width: 98vw;
+  padding: 5px;
   background-color: aquamarine;
   border: 1px solid;
   display: grid;
+  /* Template Spalten */
+  grid-template-columns: repeat(6, 1fr); /* 6 Spalten */
+  /* Template Zeilen */
+  grid-template-rows: auto auto 1fr auto auto auto auto;
+  gap: 10px;
+  grid-template-areas:
+    "navl navl navcenter navright navright navright"
+    "slider slider slider slider slider slider"
+    "top_eins top_eins top_zwei top_zwei top_zwei top_zwei"
+    "rubrik_eins rubrik_eins rubrik_eins rubrik_zwei rubrik_zwei rubrik_zwei"
+    "rubrik_drei rubrik_drei rubrik_vier rubrik_vier rubrik_fuenf rubrik_fuenf"
+    "rubrik_sechs rubrik_sechs rubrik_sechs rubrik_sieben rubrik_sieben rubrik_sieben"
+    "video video video video video video"
+    "u_bestseller u_bestseller u_bestseller u_bestseller u_bestseller u_bestseller"
+    "bestseller_eins bestseller_eins bestseller_zwei bestseller_zwei bestseller_drei bestseller_drei"
+    "footer footer footer footer footer footer";
 }
 
-.nav {
-  background-color: bisque;
+
+
+.nav{
+  display: flex;
+  text-align: center;
+  height: 2em;
+  
+  padding: 10px;
+
 }
 
 .navl {
+  grid-area: navl;
   border: 1px solid;
   background-color: chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
 }
 
 .navcenter {
+  grid-area: navcenter;
   border: 1px solid;
   background-color: chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navright {
+  grid-area: navright;
   border: 1px solid;
   background-color: chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .slider {
+  grid-area: slider;
   background-color: rgb(207, 138, 138);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .main {
   background-color: chartreuse;
+}
+
+.top_eins {
+  background-color: bisque;
+  grid-area: top_eins;
+  grid-column: span 3; /* Erstreckt sich über drei Spalten */
+}
+
+.top_zwei {
+  background-color: bisque;
+  grid-area: top_zwei;
+  grid-column: span 3; /* Erstreckt sich über drei Spalten */
+}
+
+.rubrik_eins{
+  grid-area: rubrik_eins;
+}
+
+.rubrik_zwei{
+  grid-area: rubrik_zwei;
+}
+
+.rubrik_drei{
+  grid-area: rubrik_drei;
+}
+
+.rubrik_vier{
+  grid-area: rubrik_vier;
+}
+
+.rubrik_fuenf{
+  grid-area: rubrik_fuenf;
+}
+
+.rubrik_sechs{
+  grid-area: rubrik_sechs;
+}
+
+.rubrik_sieben{
+  grid-area: rubrik_sieben;
+  background-color: cornflowerblue;
+}
+
+.u_bestseller{
+  grid-area: u_bestseller;
+}
+
+.bestseller_eins{
+  grid-area: bestseller_eins;
+}
+
+.bestseller_zwei{
+  grid-area: bestseller_zwei;
+}
+
+.bestseller_drei{
+  grid-area: bestseller_drei;
+}
+
+
+.video {
+  background-color: lightgreen;
+  grid-area: video;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightgray;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
