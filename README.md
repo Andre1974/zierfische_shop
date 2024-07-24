@@ -31,3 +31,9 @@ Wie wäre es mal mit...
 - [![Laravel][Laravel.com]][Laravel-url]
 - [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 - [![JQuery][JQuery.com]][JQuery-url]
+
+### Author & Contact
+
+André Semm
+e-Mail: andre.semm@dci-student.org
+Telefon: +49 152 33
