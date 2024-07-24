@@ -45,3 +45,7 @@ Distributed under the MIT License. For more Informations read license.txt
 <li>Bider ebenfalls verlinken</li>
 <li>Burger Menü / mobile optimierungen</li>
 <li>@media</li>
+
+### Screenshots
+
+coming soon
