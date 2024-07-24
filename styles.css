@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --back-color: rgb(33, 43, 57);
+  --back-nav-color: #222222;
+  --schriftfarbe: #e4cfaa;
+}
+
 html {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 15px;
-  background-color: #212b39;
-  color: white;
+  background-color: var(--back-color);
+  color: var(--schriftfarbe);
 }
 
 .container {
@@ -45,7 +51,7 @@ html {
 
 .navl {
   grid-area: navl;
-  border: 1px solid;  
+  border: 1px solid;
   display: flex;
   align-items: center;
   padding-right: 50px;
@@ -55,7 +61,7 @@ html {
 .navcenter {
   grid-area: navcenter;
   border: 1px solid;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,20 +195,34 @@ html {
   justify-content: center;
 }
 
-.footer li{
+.footer li {
   text-decoration: none;
   list-style: none;
-  padding: 10px
+  padding: 10px;
+  color: #df3907e2;
 }
 
 /*Ende Template*/
 
 /*Anpassung Navigation*/
 
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navl li {
   text-decoration: none;
   list-style-type: none;
-  padding-right: 10px;
+  padding-right: 20px;
+  margin-right: 30px;
+
+}
+
+.navl li:hover{
+  cursor:pointer ;
+  color: goldenrod;
 }
 
 .navright {
@@ -222,7 +242,8 @@ html {
 }
 
 /* Neue CSS-Regeln für die Texte in der Box */
-.top_eins_angebot p, .top_zwei_angebot p {
+.top_eins_angebot p,
+.top_zwei_angebot p {
   margin: 5px 0;
 }
 
@@ -238,8 +259,9 @@ html {
 .btn1 {
   height: 3em;
   border-radius: 10px;
+  margin-top: 20px;
   font-size: medium;
-  padding: 1px;
+  padding: 13px;
   background-color: #4a3721;
   color: white;
 }
@@ -248,3 +270,37 @@ html {
   background-color: #d98526;
 }
 /*Button Ende*/
+
+.u_bestseller {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d98526;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 35em;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  text-align: center;
+}
+

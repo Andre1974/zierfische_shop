@@ -15,29 +15,36 @@
     <!-- Hauptcontainer -->
 
     <div class="container">
-      <!-- Navigation -->
-
+      <!-- Navigation -->      
       <div class="nav navl">
         <li>News</li>
         <li>Shop</li>
         <li>Journal</li>
         <li>Live Q&A</li>
       </div>
-      <div class="nav navcenter">
-        <img src="/pictures/logo.png" alt="Logo Shop" />Fische mit Biss
-      </div>
-      <div class="nav navright">
-        <p>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-solid fa-bag-shopping"></i>
-        </p>
-      </div>
+      
+        <div class="nav navcenter">
+          <img src="/pictures/logo.png" alt="Logo Shop" />Fische mit Biss
+        </div>
+        <div class="nav navright">
+          <p>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </p>
+        </div>
+      
 
       <!-- Navigation ENDE -->
       <!-- Slider -->
       <div class="slider">
-        <img src="/pictures/hai_banner3.png" alt="Fisch mit Biss" />
+        <div class="image-container">
+          <img src="/pictures/hai_banner3.png" alt="Fisch mit Biss" />
+          <div class="text-overlay">Du hast etwas gegen Deine Nachbarn? <br>Wir auch!
+            <p><button class="btn1">Schnäppchen jetzt kaufen!</button></p>
+          </div>
+          
+        </div>
       </div>
       <!-- Slider ENDE -->
       <!-- Main Container mit Rubriken Artikeln und Video-->
@@ -47,6 +54,7 @@
       </div>
       <div class="img_top top_eins_angebot">
         <h3>Das Top Angebot 1</h3>
+        <p>Nur 999,00€</p>
 
         <p><button class="btn1">Beiß jetzt zu!</button></p>
       </div>
@@ -56,6 +64,7 @@
       </div>
       <div class="img_top top_zwei_angebot">
         <h3>Das Top Angebot 2</h3>
+        <p>Nur 1999,00€</p>
         <p><button class="btn1">Beiß jetzt zu!</button></p>
       </div>
       <div class="img_top rubrik_eins">
@@ -80,9 +89,9 @@
         <img src="/pictures/un1.png" alt="" />
       </div>
       <div class="u_bestseller"><h3>Bestseller</h3></div>
-      <div class="bestseller_eins">Bestseller 1</div>
-      <div class="bestseller_zwei">Bestseller 2</div>
-      <div class="bestseller_drei">Bestseller 3</div>
+      <div class="img_top bestseller_eins"><img src="/pictures/un1.png" alt=""></div>
+      <div class="img_top bestseller_zwei"><img src="/pictures/un1.png" alt=""></div>
+      <div class="img_top bestseller_drei"><img src="/pictures/un1.png" alt=""></div>
       <div class="video">
         <div class="video-container">
           <iframe
@@ -95,7 +104,7 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-          <iframe
+          <!-- <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/vlUtIBG4mlY?si=Hm_KMr2qfB-tA-xG"
@@ -114,7 +123,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
         </div>
       </div>
       <div class="footer">
@@ -124,5 +133,6 @@
         <li>Widerruf</li>
       </div>
     </div>
+    
   </body>
 </html>

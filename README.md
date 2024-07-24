@@ -2,6 +2,7 @@
 
 Version v0.010 erstes Grundlayout steht
 Version v0.020 die meisten Kat. sind eingebaut aber noch nicht mit Button und Beschriftung belegt
+Version v0.030 verlinkungen und bschriftungen auf rubriken fehlen noch 
 
 <li>Author André Semm</li>
 <b>Stand 24.07.2024</b>
