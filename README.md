@@ -1,12 +1,13 @@
 ### Version
 
 Version v0.010 erstes Grundlayout steht
+Version v0.020 die meisten Kat. sind eingebaut aber noch nicht mit Button und Beschriftung belegt
 
 <li>Author André Semm</li>
 <b>Stand 24.07.2024</b>
 <b> Entwicklung eines Onlineshops für spezielle Fische</b><br>
 
-<li>Vorlage für die Entwicklung unter https://www.zierfische.de/</li>
+<li>IdeenVorlage für die Entwicklung unter https://www.zierfische.de/</li>
 <li>Mockup für Desktop und mobile unter https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2FrB8MLQAUAeIvp9iTINVHPI%2FZierfisch-Shop%3Fnode-id%3D0-1%26t%3DKgIJAM9HbdgK1k5v-1"</li>
 
 <li>weitere Doku in README</li>

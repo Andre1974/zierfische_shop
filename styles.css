@@ -15,18 +15,15 @@ html {
 .container {
   width: 98vw;
   padding: 5px;
-  /* background-color: aquamarine; */
   border: 1px solid;
   display: grid;
-  /* Template Spalten */
   grid-template-columns: repeat(6, 1fr); /* 6 Spalten */
-  /* Template Zeilen */
-  grid-template-rows: auto auto 1fr auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto; /* Alle Zeilen passen sich dem Inhalt an */
   gap: 10px;
   grid-template-areas:
     "navl navl navl navcenter navright navright"
     "slider slider slider slider slider slider"
-    "top_eins top_eins top_zwei top_zwei top_zwei top_zwei"
+    "top_eins top_eins top_eins_angebot top_zwei top_zwei top_zwei_angebot"
     "rubrik_eins rubrik_eins rubrik_eins rubrik_zwei rubrik_zwei rubrik_zwei"
     "rubrik_drei rubrik_drei rubrik_vier rubrik_vier rubrik_fuenf rubrik_fuenf"
     "rubrik_sechs rubrik_sechs rubrik_sechs rubrik_sieben rubrik_sieben rubrik_sieben"
@@ -48,11 +45,10 @@ html {
 
 .navl {
   grid-area: navl;
-  border: 1px solid;
-  
+  border: 1px solid;  
   display: flex;
   align-items: center;
-  padding-right: 1em;
+  padding-right: 50px;
   justify-content: flex-start;
 }
 
@@ -75,7 +71,6 @@ html {
 
 .slider {
   grid-area: slider;
-  /* background-color: rgb(207, 138, 138); */
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -88,13 +83,35 @@ html {
 .top_eins {
   background-color: bisque;
   grid-area: top_eins;
-  grid-column: span 3; /* Erstreckt sich über drei Spalten */
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.top_eins_angebot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: blue;
+  grid-area: top_eins_angebot;
+  height: 100%;
 }
 
 .top_zwei {
   background-color: bisque;
   grid-area: top_zwei;
-  grid-column: span 3; /* Erstreckt sich über drei Spalten */
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.top_zwei_angebot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(52, 152, 56);
+  grid-area: top_zwei_angebot;
+  height: 100%;
 }
 
 .rubrik_eins {
@@ -143,8 +160,25 @@ html {
 }
 
 .video {
-  background-color: lightgreen;
   grid-area: video;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.video-container {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 315px;
 }
 
 .footer {
@@ -153,6 +187,12 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+}
+
+.footer li{
+  text-decoration: none;
+  list-style: none;
+  padding: 10px
 }
 
 /*Ende Template*/
@@ -174,3 +214,37 @@ html {
 .slider img {
   width: 100%;
 }
+
+.img_top {
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+/* Neue CSS-Regeln für die Texte in der Box */
+.top_eins_angebot p, .top_zwei_angebot p {
+  margin: 5px 0;
+}
+
+.img_top img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gleichmäßige Skalierung der Bilder */
+  display: block;
+  margin: auto;
+}
+
+/*Button*/
+.btn1 {
+  height: 3em;
+  border-radius: 10px;
+  font-size: medium;
+  padding: 1px;
+  background-color: #4a3721;
+  color: white;
+}
+
+.btn1:hover {
+  background-color: #d98526;
+}
+/*Button Ende*/
