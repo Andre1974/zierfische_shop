@@ -8,3 +8,14 @@
 <li>weitere Doku in README</li>
 
 <b>Bildrechte liegen bei www.zierfische.de. Der Einfachheit halber und mangels Zeit sowie geeigneter Software wurden diese wieder genutzt und müssen noch ausgetauscht werden.</b>
+
+### Built With
+
+- [![Next][Next.js]][Next-url]
+- [![React][React.js]][React-url]
+- [![Vue][Vue.js]][Vue-url]
+- [![Angular][Angular.io]][Angular-url]
+- [![Svelte][Svelte.dev]][Svelte-url]
+- [![Laravel][Laravel.com]][Laravel-url]
+- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+- [![JQuery][JQuery.com]][JQuery-url]
