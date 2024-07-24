@@ -2,7 +2,7 @@
 
 Version v0.010 erstes Grundlayout steht
 Version v0.020 die meisten Kat. sind eingebaut aber noch nicht mit Button und Beschriftung belegt
-Version v0.030 verlinkungen und bschriftungen auf rubriken fehlen noch 
+Version v0.030 verlinkungen und beschriftungen auf rubriken fehlen noch
 
 <li>Author André Semm</li>
 <b>Stand 24.07.2024</b>
@@ -24,17 +24,24 @@ Wie wäre es mal mit...
 
 ### Built With
 
-- [![Next][Next.js]][Next-url]
-- [![React][React.js]][React-url]
-- [![Vue][Vue.js]][Vue-url]
-- [![Angular][Angular.io]][Angular-url]
-- [![Svelte][Svelte.dev]][Svelte-url]
-- [![Laravel][Laravel.com]][Laravel-url]
-- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-- [![JQuery][JQuery.com]][JQuery-url]
+- CSS
+- HTML
+- GRID
+- Git & GitHub
 
 ### Author & Contact
 
 André Semm
 e-Mail: andre.semm@dci-student.org
 Telefon: +49 152 33
+
+### Author & Contact
+
+Distributed under the MIT License. For more Informations read license.txt
+
+### Roadmap
+
+<li>Preise einfügen</li>
+<li>Bider ebenfalls verlinken</li>
+<li>Burger Menü / mobile optimierungen</li>
+<li>@media</li>
